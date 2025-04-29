@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | EcoFood Community</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles/comentarios.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-ecofood.png" alt="Logo EcoFood" height="40">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="comentarios.html">Comentarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <section class="text-center mb-5">
+            <h1 id="bienvenida-usuario" class="display-4">¡Bienvenido, <span id="nombre-usuario">Usuario</span>!</h1>
+            <p class="lead">Gracias por ser parte del cambio contra el desperdicio alimentario.</p>
+        </section>
+
+        <!-- Acciones Rápidas -->
+        <section class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-comments fa-3x text-success mb-3"></i>
+                        <h3 class="card-title">Mis Comentarios</h3>
+                        <p class="card-text">Revisa y edita tus contribuciones a la comunidad.</p>
+                        <a href="comentarios.html" class="btn btn-outline-success">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-utensils fa-3x text-success mb-3"></i>
+                        <h3 class="card-title">Reportar Desperdicio</h3>
+                        <p class="card-text">Informa sobre lugares con alto desperdicio alimentario.</p>
+                        <a href="#" class="btn btn-outline-success">Reportar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <i class="fas fa-calendar-check fa-3x text-success mb-3"></i>
+                        <h3 class="card-title">Próximos Eventos</h3>
+                        <p class="card-text">Participa en nuestras actividades comunitarias.</p>
+                        <a href="#" class="btn btn-outline-success">Ver Agenda</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estadísticas -->
+        <section class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title mb-4">Tu impacto</h2>
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <h3 class="text-success">5</h3>
+                        <p class="text-muted">Comentarios</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="text-success">3</h3>
+                        <p class="text-muted">Eventos asistidos</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="text-success">12</h3>
+                        <p class="text-muted">Personas impactadas</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="text-success">8kg</h3>
+                        <p class="text-muted">Alimentos salvados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 EcoFood Community. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Personalizado -->
+    <script src="js/home.js"></script>
+</body>
+</html>
