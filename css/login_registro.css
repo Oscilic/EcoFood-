@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+}
+
+.navbar {
+    background-color: #50603A; 
+    padding: 1rem;
+}
+
+.navbar-brand, 
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-brand:hover, 
+.navbar-nav .nav-link:hover {
+    color: #D2B48C; 
+}
+
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FAF8F0; 
+    border: 1px solid #D2B48C; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.card-header {
+    background-color: #50603A; 
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+
+.form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #D2B48C;
+    transition: all 0.3s;
+    margin-bottom: 1rem;
+}
+
+.form-control:focus {
+    border-color: #50603A;
+    box-shadow: 0 0 0 0.25rem rgba(80, 96, 58, 0.25);
+    outline: none;
+}
+
+
+.btn {
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn-success, 
+.btn-primary {
+    background-color: #50603A;
+    border-color: #50603A;
+    color: white;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn-success:hover, 
+.btn-primary:hover {
+    background-color: #94A07A;
+    border-color: #94A07A;
+    color: white;
+}
+
+.text-danger {
+    font-size: 0.875rem;
+    color: #A52A2A;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.alert {
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    color: #0f5132;
+}
+
+a {
+    color: #50603A;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #94A07A;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1.5rem;
+    }
+    
+    .card-header {
+        padding: 1rem;
+    }
+    
+    .btn-success, 
+    .btn-primary {
+        padding: 0.75rem;
+    }
+}
