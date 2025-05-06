@@ -1,0 +1,89 @@
+/* Landing Page - Persona 1 */
+body {
+    background-color: rgba(220, 237, 200, 0.3); 
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(241, 248, 233, 0.8) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(241, 248, 233, 0.8) 0%, transparent 20%);
+    background-attachment: fixed;
+}
+
+.ecofood-hero {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(2px); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin: 2rem auto;
+    padding: 3rem;
+    max-width: 1200px;
+}
+
+.ecofood-title {
+    color: #50603a;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ecofood-subtitle {
+    color: #6c757d;
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ecofood-motivational {
+    background-color: #f1f8e9;
+    border-color: #dcedc8;
+    color: #50603a;
+    max-width: 800px;
+    margin: 2rem auto;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.ecofood-motivational {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.ecofood-btn-register {
+    background-color: #50603a;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.ecofood-btn-login {
+    background-color: white;
+    color: #50603a;
+    border: 2px solid #50603a;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.ecofood-btn-register:hover {
+    background-color: #94a07a;
+    transform: translateY(-2px);
+}
+
+.ecofood-btn-login:hover {
+    background-color: #f1f8e9;
+    color: #50603a;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ecofood-title {
+        font-size: 2rem;
+    }
+    
+    .ecofood-subtitle {
+        font-size: 1rem;
+    }
+}
