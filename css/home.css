@@ -1,0 +1,242 @@
+/* Variables de color */
+:root {
+    --ecofood-primary: #50603a;
+    --ecofood-primary-rgb: 80, 96, 58;
+    --ecofood-hover: #94a07a;
+    --ecofood-light-bg: #f1f8e9;
+    --ecofood-dark: #212529;
+    --ecofood-border: #dcedc8;
+}
+
+/* Estilos generales */
+body.ecofood-home {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.ecofood-navbar {
+    background-color: var(--ecofood-primary) !important;
+    box-shadow: 0 2px 10px rgba(var(--ecofood-primary-rgb), 0.1);
+}
+
+.ecofood-logo {
+    height: 70px;
+}
+
+/* Contenido principal */
+.ecofood-main {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+/* Bienvenida */
+.ecofood-welcome {
+    margin-bottom: 3rem;
+}
+
+.ecofood-title {
+    color: var(--ecofood-primary);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.ecofood-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: var(--ecofood-hover);
+}
+
+.ecofood-subtitle {
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+
+/* Tarjetas */
+.ecofood-card {
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ecofood-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(var(--ecofood-primary-rgb), 0.1);
+}
+
+.ecofood-icon {
+    color: var(--ecofood-primary);
+    transition: all 0.3s ease;
+}
+
+.ecofood-card:hover .ecofood-icon {
+    transform: scale(1.1);
+    color: var(--ecofood-hover);
+}
+
+.ecofood-card-title {
+    color: var(--ecofood-primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.ecofood-card-text {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.ecofood-btn-outline {
+    border: 2px solid var(--ecofood-primary);
+    color: var(--ecofood-primary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.ecofood-btn-outline:hover {
+    background-color: var(--ecofood-primary);
+    color: white;
+}
+
+/* Estadísticas */
+.ecofood-stats {
+    margin-top: 3rem;
+}
+
+.ecofood-stats-title {
+    color: var(--ecofood-primary);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#ecofood-estadisticas [class^="col"] {
+    padding: 1.5rem 0;
+    position: relative;
+}
+
+#ecofood-estadisticas [class^="col"]:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 1px;
+    background-color: rgba(var(--ecofood-primary-rgb), 0.2);
+}
+
+#ecofood-estadisticas h3 {
+    color: var(--ecofood-primary);
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#ecofood-estadisticas p {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* Footer */
+.ecofood-footer {
+    background-color: var(--ecofood-dark);
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+.ecofood-footer-text {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ecofood-title {
+        font-size: 1.8rem;
+    }
+    
+    .ecofood-subtitle {
+        font-size: 1rem;
+    }
+    
+    #ecofood-estadisticas [class^="col"] {
+        margin-bottom: 1rem;
+    }
+    
+    #ecofood-estadisticas [class^="col"]::after {
+        display: none;
+    }
+}
+
+/* Sección Misión y Visión */
+.ecofood-mision, .ecofood-vision {
+    border-top: 4px solid var(--ecofood-primary);
+    transition: all 0.4s ease;
+}
+
+.ecofood-mision:hover {
+    border-top-color: #4a8c3a; 
+    transform: translateY(-5px);
+}
+
+.ecofood-vision:hover {
+    border-top-color: #7a9c6a; 
+    transform: translateY(-5px);
+}
+
+.ecofood-mision-text, .ecofood-vision-text {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    padding: 0 1rem;
+}
+
+.ecofood-stats-title i {
+    color: var(--ecofood-primary);
+}
+
+/* Efecto especial para las tarjetas */
+.ecofood-mision::before, .ecofood-vision::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--ecofood-primary), var(--ecofood-hover));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.ecofood-mision:hover::before, .ecofood-vision:hover::before {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .ecofood-mision, .ecofood-vision {
+        margin-bottom: 1.5rem;
+    }
+    
+    .ecofood-mision-text, .ecofood-vision-text {
+        font-size: 1rem;
+    }
+}
+
+.ecofood-mision, .ecofood-vision {
+    opacity: 0,5;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}

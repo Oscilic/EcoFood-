@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios | EcoFood Community</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/comentarios.css">
+</head>
+<body class="ecofood-comentarios">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ecofood-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-ecofood.png" alt="Logo EcoFood" class="ecofood-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarComentarios">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarComentarios">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="comentarios.html">Comentarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container ecofood-main">
+        <section class="ecofood-section">
+            <h1 class="ecofood-title">Comparte tu opinión</h1>
+            
+            <!-- Formulario -->
+            <div class="ecofood-form-container">
+                <form id="ecofood-form-comentario">
+                    <div class="mb-3">
+                        <label for="ecofood-nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control ecofood-input" id="ecofood-nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ecofood-email" class="form-label">Email</label>
+                        <input type="email" class="form-control ecofood-input" id="ecofood-email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ecofood-comentario" class="form-label">Comentario</label>
+                        <textarea class="form-control ecofood-textarea" id="ecofood-comentario" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn ecofood-btn">
+                        <i class="fas fa-paper-plane me-2"></i> Publicar
+                    </button>
+                </form>
+            </div>
+
+            <!-- Lista de Comentarios -->
+            <h2 class="ecofood-subtitle">Comentarios de la comunidad</h2>
+            
+            <div id="ecofood-lista-comentarios" class="row g-3">
+                <!-- Comentarios se cargarán dinámicamente aquí -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="ecofood-footer">
+        <div class="container text-center">
+            <p class="ecofood-footer-text">© 2025 EcoFood Community. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Personalizado -->
+    <script src="js/comentarios.js"></script>
+</body>
+</html>
