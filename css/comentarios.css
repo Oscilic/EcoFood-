@@ -21,7 +21,7 @@ body.ecofood-comentarios {
 }
 
 .ecofood-logo {
-    height: 40px;
+    height: 70px;
 }
 
 /* Contenido principal */
@@ -130,5 +130,38 @@ body.ecofood-comentarios {
     
     .ecofood-form-container {
         padding: 1.5rem;
+    }
+}
+
+/* Valoración con estrellas */
+.ecofood-valoracion {
+    color: #ffc107;
+    margin: 0.5rem 0;
+}
+
+/* Tarjeta de comentario mejorada */
+.ecofood-comentario {
+    border-left: 4px solid var(--ecofood-primary);
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.ecofood-comentario:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Formulario más atractivo */
+#ecofood-form-comentario {
+    background-color: rgba(var(--ecofood-primary-rgb), 0.03);
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px dashed var(--ecofood-border);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #ecofood-lista-comentarios .col-md-6 {
+        margin-bottom: 1.5rem;
     }
 }

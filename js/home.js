@@ -41,11 +41,28 @@ function cargarDatosUsuario() {
     `;
 }
 
-// Cerrar sesión
+
 document.getElementById('logout-btn')?.addEventListener('click', () => {
-    // En un proyecto real, esto limpiaría tokens/localStorage
+
     window.location.href = 'index.html';
 });
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', cargarDatosUsuario);
+
+// Animación para Misión y Visión
+function animarSecciones() {
+    const secciones = document.querySelectorAll('.ecofood-mision, .ecofood-vision');
+    secciones.forEach((seccion, index) => {
+        setTimeout(() => {
+            seccion.style.opacity = '1';
+            seccion.style.transform = 'translateY(0)';
+        }, index * 200);
+    });
+}
+
+// Inicialización
+document.addEventListener('DOMContentLoaded', () => {
+    cargarDatosUsuario();
+    animarSecciones();
+});
